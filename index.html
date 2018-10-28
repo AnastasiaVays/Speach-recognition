@@ -6,6 +6,7 @@
 </head>
 <body>
 
+  <h4>You can say anything, but please don't say poop!<h4>
     
   <div class="words" contenteditable>
   </div>
@@ -28,7 +29,7 @@
       .map(result => result.transcript)
       .join('');
 
-      const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '💩');
+      const poopScript = transcript.replace(/poop|poo|shit|dump/gi, 'I told you not to!');
       p.textContent = poopScript;
 
       const awesomeScript = transcript.replace(/awesome/gi, 'Thanks, I know.');
@@ -65,6 +66,11 @@
       font-weight: 200;
       font-size: 20px;
     }
+    
+    h4 {
+     align-content: center;
+    }
+    
 
     .words {
       max-width: 500px;
