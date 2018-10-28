@@ -6,7 +6,7 @@
 </head>
 <body>
 
-  <h4>You can say anything, but please don't say poop! Try to say "Congrats", for example...<h4>
+  <h3 align="center">You can say anything, but please don't say poop! Try to say "Congrats", for example...</h3>
     
   <div class="words" contenteditable>
   </div>
@@ -29,7 +29,7 @@
       .map(result => result.transcript)
       .join('');
 
-      const poopScript = transcript.replace(/poop|poo|shit|dump/gi, 'I told you not to!');
+      const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '!');
       p.textContent = poopScript;
 
       const awesomeScript = transcript.replace(/awesome/gi, 'Thanks, I know.');
@@ -65,10 +65,7 @@
       font-size: 20px;
     }
     
-    h4 {
-     align-text:center;
-     font:fantasy;
-    }
+  
     
 
     .words {
