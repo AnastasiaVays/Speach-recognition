@@ -29,13 +29,8 @@
       .map(result => result.transcript)
       .join('');
 
-      const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '!');
-      p.textContent = poopScript;
-
+      const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '!')
       const awesomeScript = transcript.replace(/awesome/gi, 'Thanks, I know.');
-      p.textContent = awesomeScript; 
-
-      
       const congratsScript = transcript.replace(/congrats/gi, 'Congrats, Khoa! Have an awesome onboarding tomorrow!');
       p.textContent = congratsScript;
 
